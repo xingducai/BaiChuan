@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.xingdu.BaiChuan" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>BaiChuan</name>
+    <js-module name="BaiChuan" src="www/BaiChuan.js">
+        <clobbers target="cordova.plugins.BaiChuan"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="BaiChuan">
+                <param name="android-package" value="com.xingdu.BaiChuan.BaiChuan"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+        </config-file>
+        <source-file src="src/android/BaiChuan.java" target-dir="src/com/xingdu/BaiChuan"/>
+
+        <!--插件依赖百川sdk要用到的gradle-->
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference"/>
+
+    </platform>
+</plugin>
