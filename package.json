@@ -1,6 +1,6 @@
 {
   "name": "baichuan",
-  "version": "1.0.0.1",
+  "version": "1.0.0",
   "description": "ionic3阿里百川sdk插件.",
   "main": "index.js",
   "scripts": {
