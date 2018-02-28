@@ -1,7 +1,7 @@
 {
   "name": "baichuan",
   "version": "1.0.0",
-  "description": "ionic3阿里百川sdk插件",
+  "description": "ionic3阿里百川sdk插件.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
