@@ -10,5 +10,13 @@
     "baichuan ,ionic3"
   ],
   "author": "xingdu",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xingducai/BaiChuan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xingducai/BaiChuan/issues"
+  },
+  "homepage": "https://github.com/xingducai/BaiChuan#readme"
 }
